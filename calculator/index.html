@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template </title>
+    <style>
+        #heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 80px;       
+        }
+        #main{
+            margin-top: 20px;
+            font-family: sans-serif;
+            display: grid;
+            grid-template-areas: 'twentyfive twentyfive twentyfive twentyfive'
+                                 'clear clear minus plus'
+                                 'seven eight nine slash'
+                                 'four five six multiply'
+                                 'one two three equal'
+                                 'zero zero dot equal';
+           height: 400px;
+           width: 280px;
+           margin: auto;
+           margin-top: 20px;
+           
+            
+        }
+        #main>div{
+          
+            /* background-color: lightpink; */
+            text-align: center;
+            margin: 2px;
+            padding: 5px;
+            padding-top: 1.5em;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #one{
+            grid-area: twentyfive;
+            color: white;
+            background-color: darkorange;
+        }
+        #two{
+            grid-area:clear ;
+            color: white;
+            background-color: darkturquoise;
+        }
+        #three{
+            grid-area: minus;
+            color: darkorange;
+            background-color: lightpink;
+            font-size: 24px;
+        }
+        #four{
+            grid-area: plus;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #five{
+            grid-area: seven;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #six{
+            grid-area: eight;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #seven{
+            grid-area: nine;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #eight{
+            grid-area: slash;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #nine{
+            grid-area: four;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #ten{
+            grid-area: five;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #eleven{
+            grid-area:six ;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #twelve{
+            grid-area: multiply;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #thirteen{
+            grid-area: one;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #fourteen{
+            grid-area: two;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #fifteen{
+            grid-area: three;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #sixteen{
+            grid-area:equal;
+            background-color: red;
+            color: white;
+        }
+        #seventeen{
+            grid-area: zero;
+            color: darkorange;
+            background-color: lightpink;
+        }
+        #eighteen{
+            grid-area: dot;
+            color: darkorange;
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="heading"><h1>CALCULATOR</h1></div>
+    <div id="main"> 
+        <div id="one">25</div>
+        <div id="two">clear</div>
+        <div id="three">-</div>
+        <div id="four">+</div>
+        <div id="five">7</div>
+        <div id="six">8</div>
+        <div id="seven">9</div>
+        <div id="eight">/</div>
+        <div id="nine">4</div>
+        <div id="ten">5</div>
+        <div id="eleven">6</div>
+        <div id="twelve">x</div>
+        <div id="thirteen">1</div>
+        <div id="fourteen">2</div>
+        <div id="fifteen">3</div>
+        <div id="sixteen">=</div>
+        <div id="seventeen">0</div>
+        <div id="eighteen">.</div>
+    </div>
+</body>
+</html>

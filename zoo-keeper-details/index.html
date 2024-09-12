@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Keeper Application Form</title>
+</head>
+<body>
+    <h1>Zoo Keeper Application Form</h1>
+    <p><i>Please complete the form, Mandatory fields are marked with a <sup style="color: red;">*</sup></i></p>
+    
+    <fieldset>
+        <legend>CONTACT DETAILS</legend>
+        <table>
+            <tr>
+                <td><label>Name<sup style="color:crimson;">*</sup></label></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Telephone</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email<sup style="color:crimson;">*</sup></label></td>
+                <td><input type="text" required></td>
+            </tr>
+        </table>            
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+        <table>
+            <tr>
+                <td><label for=""><sup style="color:crimson;">*</sup>Age</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td><select name="Gender" id="">
+                    <option value="Gender">Male</option>
+                    <option value="Gender">Female</option>
+                    <option value="Gender">Others</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">When did you <br>first know you <br> wanted to be a <br> zoo-keeper?</label></td>
+                <td><textarea name="" id="" rows="3"></textarea><select name="" id="" multiple>
+                </select></td>
+            </tr>
+        </table>        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>PICK YOUR FACORITE ANIMALS</legend>
+        <table>
+        <tr>
+        <td><input type="checkbox">
+            <label for="">Zebra</label></td>
+        <td><input type="checkbox">
+            <label for="">Cat</label></td>
+        <td><input type="checkbox">
+            <label>Anaconda</label></td>
+        <td><input type="checkbox">
+            <label>Human</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox">
+                <label>Elephant</label></td>
+            <td> <input type="checkbox">
+                <label>Wildebeest</label></td>
+            <td><input type="checkbox">
+                <label>Pigeon</label></td>
+            <td><input type="checkbox">
+                <label>Crab</label></td>
+        </tr>
+    </table>
+    </fieldset>
+    <br>
+    <input type="button" value="Submit Application">
+</body>
+</html>
